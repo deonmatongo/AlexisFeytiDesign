@@ -1341,15 +1341,16 @@
     min-height: 177px;
   }
 }
-@media (max-width: 768px) { /* Adjust styles for devices with width <= 768px */
-  .u-image-1 {
-      width: 100%; /* Ensure it fits the container */
+@media (max-width: 768px) { /* For devices with width <= 768px */
+  .about  {
+      width: 100%; /* Ensure the image fits the width of the container */
       height: auto; /* Maintain aspect ratio */
-      object-fit: contain; /* Ensure the full image is visible */
-      display: block;
-      margin: 0; /* Remove margins */
-      position: relative; /* Explicitly control positioning */
-      left: 0; /* Move the image to the left edge */
+      object-fit: contain; /* Show the full image without cropping */
+      margin: 0; /* Remove auto-centering margins */
+      position: relative; /* Allow precise positioning */
+      left: -10%; /* Move the image to the left */
   }
 }
+
+
 
