@@ -1341,3 +1341,15 @@
     min-height: 177px;
   }
 }
+@media (max-width: 768px) { /* Adjust styles for devices with width <= 768px */
+  .u-image-1 {
+      width: 100%; /* Ensure it fits the container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: contain; /* Ensure the full image is visible */
+      display: block;
+      margin: 0; /* Remove margins */
+      position: relative; /* Explicitly control positioning */
+      left: 0; /* Move the image to the left edge */
+  }
+}
+
